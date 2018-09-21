@@ -78,7 +78,71 @@
 				</section>
 
 				<section>
-					<h3>Slide 3</h3>
+					<table>
+						<thead><tr>
+							<th>Blockchain Ecosystem</th>
+							<th>OpenStack</th>
+						</tr></thead>
+						<tbody><tr>
+							<td>Identity</td>
+							<td>Keystore</td>
+						</tr><tr>
+							<td>Certificate Authority</td>
+							<td>Barbican</td>
+						</tr><tr>
+							<td>Node Ledger Storage</td>
+							<td>Cinder / Swift</td>
+						</tr><tr>
+							<td>DNS</td>
+							<td>Designate</td>
+						</tr><tr>
+							<td>Stack Management</td>
+							<td>Heat</td>
+						</tr></tbody>
+					</table>
+
+					<p><small>Adapted from <a href="https://www.openstack.org/videos/barcelona-2016/blockchain-and-openstack-building-trusted-chains">Blockchain and OpenStack - Building Trusted Chains</a></small></p>
+				</section>
+
+				<section>
+					<h3>Scenario #1: Immutable audit trail</h3>
+				</section>
+
+				<section>
+					<p>Chainpoint is an open standard for linking data to the blockchain to create a timestamp proof</p>
+					<figure>
+						<img src="images/chainpoint.png">
+						<figcaption><small>Source: <a href="https://chainpoint.org/">Chainpoint.org</a></small></figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<p>The Keystone middleware library provides an optional WSGI middleware filter which allows the ability to audit API requests for each component of OpenStack</p>
+					<figure>
+						<img src="images/audit.png">
+						<figcaption><small>Source: <a href="https://docs.openstack.org/">OpenStack.org</a></small></figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<table>
+						<thead><tr>
+							<th>Pros</th>
+							<th>Cons</th>
+						</tr></thead>
+						<tbody><tr>
+							<td>Simplicity<br>Cost effectiveness</td>
+							<td>Needs a trade-off between on- and off-chain data in case of heavy logging</td>
+						</tr></tbody>
+					</table>
+				</section>
+
+				<section>
+					<h3>Billing for cloud resources</h3>
+				</section>
+
+				<section>
+					<h3>Smart governance</h3>
 				</section>
 
 				<section>
