@@ -82,7 +82,19 @@
 				</section>
 
 				<section>
-					<h3>Slide 2</h3>
+					<blockquote>A smart contract is a computerized transaction protocol that executes the terms of a contract.
+<footer>— <cite>Nick Szabo, <em>Smart Contracts</em>, 1994</cite></footer>
+					</blockquote>
+				</section>
+
+				<section>
+					<h3>Smart Contracts</h3>
+					<ul>
+						<li>The blockchain acts as a Virtual Machine
+						<li>Cryptographically stored
+						<li>Operate autonomously
+						<li>Tipically, have a long lifetime
+					</ul>
 				</section>
 
 				<section>
@@ -171,14 +183,42 @@
 				</section>
 
 				<section>
+					<p>Using smart contracts to orchestrate the cloud by calling the Heat API.</p>
+
+					<p>This is the most challenging scenario.</p>
+				</section>
+
+				<section>
+					<p>CAVEAT: Most blockchains (e.g., Ethereum) are designed to be entirely deterministic.</p>
+
+					<p>Hence making API calls from inside a smart contract (e.g., a solidity program) is forbidden.</p>
+				</section>
+
+				<section>
+					<p>FIRST SOLUTION: We accept data inputs from more than one untrusted party and then execute the data-dependent action only after a number of them have provided the same answer.</p>
+				</section>
+
+				<section>
+					<p>SECOND SOLUTION: We demonstrate that the data is genuine and untampered (auditable VMs, Trusted Execution Environments, ...).</p>
+				</section>
+
+				<section>
+					<p>Tools like Oraclize act as a data carriers, building a reliable connection between APIs and the smart contract</p>
+					<figure>
+						<img src="images/oraclize.png">
+						<figcaption><small>Source: <a href="https://oraclize.it/">Oraclize</a></small></figcaption>
+					</figure>
+				</section>
+
+				<section>
 					<table>
 						<thead><tr>
 							<th>Pros</th>
 							<th>Cons</th>
 						</tr></thead>
 						<tbody><tr>
-							<td>Simplicity<br>Cost effectiveness</td>
-							<td>Needs a trade-off between on- and off-chain data in case of heavy logging</td>
+							<td>Extremely powerful</td>
+							<td>Tricky to implement</td>
 						</tr></tbody>
 					</table>
 				</section>
