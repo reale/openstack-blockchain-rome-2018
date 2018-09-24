@@ -1,3 +1,3 @@
-# Slides for the OpenStack Day 2018 in Rome
+# Solidity in the Cloud
 
-Slides for the OpenStack Day 2018 in Rome
+My talk at the OpenStack Day 2018 in Rome.
